@@ -1,0 +1,112 @@
+form {
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+form > div {
+    background-color: white;
+    padding: 5px;
+}
+
+input {
+    color: #6d6d6d;
+    font-family: 'Helvetica Neue', Helvetica, Arial, serif;
+    font-size: 1em;
+
+    border: 1px solid #ccc;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+    -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+    -ms-transition: border linear 0.2s, box-shadow linear 0.2s;
+    -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+    transition: border linear 0.2s, box-shadow linear 0.2s;
+}
+
+input:focus {
+    border-color: rgba(82, 168, 236, 0.8);
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(0, 0, 255, 0.8);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(0, 0, 255, 0.8);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(0, 0, 255, 0.8);
+    outline: 0;
+    outline: thin dotted \9;
+    /* IE6-9 */
+}
+
+.inner {
+    width: 940px;
+}
+header h1:before {
+    background: transparent url(../images/saffire.png) 50% 0  no-repeat;
+    background-size: 100%;
+    content: "";
+    float: left;
+    width: 34px;
+    height: 34px;
+    margin: 11px 10px 2px 0;
+    -webkit-transform: rotate(-35deg);
+    -moz-transform: rotate(-35deg);
+    -ms-transform: rotate(-35deg);
+    -o-transform: rotate(-35deg);
+    transform: rotate(-35deg);
+
+    -webkit-transition: -webkit-transform 0.7s ease;
+    -moz-transition: -moz-transform 0.7s ease;
+    -ms-transition: -ms-transform 0.7s ease;
+    -o-transition: -o-transform 0.7s ease;
+    transition: transform 0.7s ease;
+}
+
+header h1 {
+    -webkit-transition: text-shadow 0.7s ease;
+    -moz-transition: text-shadow 0.7s ease;
+    -ms-transition: text-shadow 0.7s ease;
+    -o-transition: text-shadow 0.7s ease;
+    transition: text-shadow 0.7s ease;
+}
+
+header h1:hover {
+    text-shadow: 1px 1px 1px white, 0px 0px 15px rgba(0, 0, 255, 0.6);
+}
+
+header h1:hover:before {
+    -webkit-transform: rotate(325deg);
+    -moz-transform: rotate(325deg);
+    -ms-transform: rotate(325deg);
+    -o-transform: rotate(325deg);
+    transform: rotate(325deg);
+}
+
+#view-on-github {
+    float: none;
+    margin: 0 auto;
+}
+
+#view-on-github span {
+    background: transparent url(../images/saffire.png) 12px 50% no-repeat;
+    background-size: 23px;
+}
+
+dd {
+    margin-bottom: 1em;
+    margin-left: 2em;
+}
+
+footer {
+    background: none;
+    margin-top: 0;
+    padding-top: 0;
+    text-align: center;
+}
+
+/* #Media Queries
+================================================== */
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 1000px) {
+    .inner {
+        width: 94%;
+        margin: 0 auto;
+    }
+}
