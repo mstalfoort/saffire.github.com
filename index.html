@@ -1,68 +1,72 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8'>
+<!doctype html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <!-- @todo: should be done via htacess
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+    -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chivo:900">
+    <link rel="stylesheet" href="stylesheets/stylesheet.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <link rel="stylesheet" href="stylesheets/saffire.css">
+    <link rel="stylesheet" href="stylesheets/print.css" media="print">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <title>Saffire.github.com by saffire</title>
-  </head>
+    <title>Saffire web language</title>
+</head>
 
-  <body>
-    <div id="container">
-      <div class="inner">
+<body>
+<div id="container">
+    <div class="inner">
 
         <header>
-          <h1>Saffire.github.com</h1>
-          <h2>Saffire's pages</h2>
+            <h1>Saffire</h1>
+            <h2>It's a new, in-progress programming scripting language, based primarily on Python, PHP and Ruby which brings all the best into one.</h2>
         </header>
 
         <section id="downloads" class="clearfix">
-          <a href="https://github.com/saffire" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            <a href="http://github.com/saffire/saffire" id="view-on-github" class="button"><span>View on GitHub</span></a>
         </section>
 
         <hr>
 
         <section id="main_content">
-          <h3>Welcome to GitHub Pages.</h3>
+            <h3>Welcome to Saffire and why you should be using it</h3>
+            <dl>
+                <dt>Everything is an object</dt>
+                <dd>Everything in Saffire is an object. This include scalar values like strings, numeric and booleans.</dd>
+                <dt>UTF-8 out of the box</dt>
+                <dd>All string are UTF-8 compatible. A length on a string will return the actual number of characters, not the number of bytes.</dd>
+                <dt>Operator overloading</dt>
+                <dd>It's possible to overload operators like + and -. This would make working with objects more readable.</dd>
+                <dt>No global functions</dt>
+                <dd>There will be no global functions available. All functionality is based on classes, for instance, the print() is based in the io class.</dd>
+            </dl>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+            <h3>About</h3>
+            <p>Joshua Thijssen, looking for some fun, decided he wanted to learn more about Flex/Bison. Very quickly he decided to create a parser that could actually parse PHP files, but when reading up on the Zend Language Parser, he thought; "Wouldn't it be fun to have a language that takes all the good things from Python, Ruby, and PHP, and mix them together?" Some other people certainly thought so, and presto: <em>Saffire</em> was born.</p>
+            <p>The name Saffire is a hybrid between the English word Sapphire, and its Dutch counterpart Saffier.</p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+            <h3>Support or Contact</h3>
+            <p>Having trouble with Saffire? Check out the language specification at <a href="http://spec.saffire-lang.org">spec.saffire-lang.org</a>, connect with us on the <a href="http://webchat.freenode.net?channels=saffire&amp;uio=d4">#saffire channel</a> on freenode or use the Google Groups via underneath options.</p>
+            <form action="http://groups.google.com/group/saffire-internals/boxsubscribe">
+                <div>
+                    <img src="http://groups.google.com/intl/en/images/logos/groups_logo_sm.gif" height="30" width="140" alt="Google Groups"><p>Subscribe to Saffire Internals by entering your email and clicking 'Subscribe' or <a href="http://groups.google.com/group/saffire-internals">visit this group</a></p>
+                    <label for="frm-email">Email: </label><input type="email" name="email" id="frm-email">
+                    <input type="submit" name="sub" value="Subscribe">
+                </div>
+            </form>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+            <h3>Tutorial</h3>
+            <p>Now, wait a minute. Just because we have a fancy website, doesn't mean we're done, <em>not by a long shot</em>. You might want to read up on the <a href="http://spec.saffire-lang.org">language specification</a>, but don't expect to have a working Saffire binary any time soon.</p>
         </section>
 
         <footer>
-          This page was generated by <a href="http://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="http://twitter.com/jasonlong">Jason Long</a>.
+            <hr>This page was generated by <a href="http://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="http://twitter.com/jasonlong">Jason Long</a>.
         </footer>
 
-        
-      </div>
     </div>
-  </body>
+</div>
+</body>
 </html>
